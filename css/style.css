@@ -1,0 +1,139 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+p,
+input,
+li {
+  color: #2a2a2a;
+  font-size: 14px;
+  text-align: justify;
+}
+
+p {
+  font-size: 35px;
+}
+
+section p {
+  font-size: 14px;
+  margin: 0 0;
+  text-align: justify;
+}
+
+h2 {
+  color: #2a2a2a;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+nav,
+article,
+aside,
+footer {
+  background-color: white;
+  padding: 1%;
+}
+
+header {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav {
+  height: 10px;
+  background-color: #a0001b;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+  flex: unset;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+ol li {
+  position: relative;
+  padding-left: 20px;
+  color: #a0001b;
+}
+
+ol li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+  background: #f1f1f1;
+  font-size: 15px;
+  text-align: center;
+  color: #333333;
+}
+
+.link-container {
+  width: 350px;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 7px;
+  font-size: 20px;
+}
