@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+  
+<head>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,29 +10,23 @@
     <link rel="stylesheet" href="css/style.css" />
   
 </head>
-
-  <body>
-
-    <nav></nav>
     
+<body>
+    <nav></nav>
     <header>
-
       <img
         src="https://raw.githubusercontent.com/wqbier/frontend/main/img/logo.png"
         alt="Логотип інституту"
         width="60"
         style="margin-right: 10px"
       />
-      
       <div>
         <h2 style="margin: 0">Національний технічний університет</h2>
         <h2 style="margin: 0">"Харківський політехнічний інститут"</h2>
       </div>
-    
     </header>
 
     <nav>
-      
         <ul>
         <li>
           <a href="department.html" target="_blank">Home </a>
@@ -49,19 +44,13 @@
         <input type="search" name="q" placeholder="Введіть запит" />
         <input type="submit" value="Пошук!" />
       </form>
-   
     </nav>
 
     <main>
-      
         <article>
-        
         <h1>Студентам та абітурієнтам</h1>
-
         <section>
-        
             <hr>
-        
         <table style="cellspacing="2" border="1" cellpadding="5" width="900">
             <caption style="font-size:40px">Розклад занять</caption>
                 <tr>
@@ -107,9 +96,7 @@
 
         <p>*Останнє оновлення розкладу: <time datetime="2025-03-28T09:00">28 березня 2025, 09:00</time></p>
         <p><b>Джерело інформації:</b> <cite>Офіційний сайт університету</cite>.</p>
-
-<h2>Порахувати середній бал студента</h2>
-
+        <h2>Порахувати середній бал студента</h2>
         <form oninput="result.value=parseInt(exam1.value)+parseInt(exam2.value)+parseInt(exam3.value)">
             <b>Введіть бали за перший екзамен: </b>
             <input type="number" id="exam1" value="0"><br>
@@ -120,24 +107,19 @@
              <b>Загальний бал: </b>
             <output name="result" for="exam1 exam2 exam3">0</output>
         </form>
-
         <p style="margin-top: 15px">Для обчислення середнього балу студента використовується код:
             <code>let average = (subject1 + subject2 + subject3) / 3;</code>
         </p>
         <p>Середній бал студента: <var>average</var>.</p>
-   
     </section>
-    
     <section>
         <h2>Програма стажування</h2>
         <p>Програма стажування в нашому університеті включає співпрацю з провідними компаніями в галузі IT та інженерії. Для участі необхідно подати заявку до <time datetime="2025-05-01">1 травня 2025 року</time>.</p>
     </section>
-    
     <h3 style="text-align: right">
           Дата та час публікації:
           <time datetime="2025-03-28T14:30">28 березня 2025, 14:30</time>
     </h3>
-
       </article>
       <aside >
         <p style="font-size: 15px;margin-top: 170px">Заняття з <s>математики для першокурсників</s> перенесено.</p>
