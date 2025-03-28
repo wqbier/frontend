@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма реєстрації</title>
+    <script>
+      // Функція для перевірки співпадання пароля
+      function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        if (password !== confirmPassword) {
+          alert("Паролі не співпадають!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+
+  <body style="width: 30%">
+    <h2 style="text-align: center">Форма реєстрації студента</h2>
+    <form
+      action="index.php"
+      method="POST"
+      enctype="multipart/form-data"
+      onsubmit="return validatePassword()"
+    >
+      <label for="surname">Прізвище:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        maxlength="30"
+        required
+      /><br /><br />
+
+      <label for="name">Ім'я:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        maxlength="30"
+        required
+      /><br /><br />
+
+      <label for="patronymic">По батькові:</label>
+      <input
+        type="text"
+        id="patronymic"
+        name="patronymic"
+        maxlength="30"
+      /><br /><br />
+
+      <label for="email">Електронна пошта:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        maxlength="100"
+        placeholder="example@gmail.com"
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      /><br /><br />
+
+      <label for="password">Пароль:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      /><br /><br />
+
+      <label for="confirm_password">Підтвердження пароля:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        required
+        minlength="8"
+      /><br /><br />
+
+      <label for="bday">Дата народження:</label>
+      <input type="date" id="bday" name="bday" required /><br /><br />
+
+      <label for="sex">Стать:</label><br />
+      <input type="radio" id="male" value="male" name="sex" />
+      <label for="male">Чоловік</label><br />
+      <input type="radio" id="female" value="female" name="sex" />
+      <label for="female">Жінка</label><br />
+      <input type="radio" id="other" value="other" name="sex" />
+      <label for="other">Інше</label><br /><br />
+
+      <label for="department">Факультет:</label>
+      <select id="department" name="department" required>
+        <option value="" selected disabled>Оберіть факультет</option>
+        <option value="cs_cybernetics">Комп'ютерні науки та кібернетика</option>
+        <option value="applied_math">Прикладна математика</option>
+        <option value="informatics">Інформатика</option>
+        <option value="informatics_computer_tech">
+          Інформатика та обчислювальна техніка
+        </option>
+        <option value="applied_sciences">Прикладні науки</option>
+        <option value="cs_it">
+          Комп'ютерні науки та інформаційні технології
+        </option>
+        <option value="sys_analysis">
+          Прикладний системний аналіз
+        </option></select
+      ><br /><br />
+
+      <label for="course">Курс навчання:</label><br />
+      <input
+        type="radio"
+        id="course_1"
+        value="course_1"
+        name="course"
+        required
+      />
+      <label for="course_1">1</label><br />
+      <input
+        type="radio"
+        id="course_2"
+        value="course_2"
+        name="course"
+        required
+      />
+      <label for="course_2">2</label><br />
+      <input
+        type="radio"
+        id="course_3"
+        value="course_3"
+        name="course"
+        required
+      />
+      <label for="course_3">3</label><br />
+      <input
+        type="radio"
+        id="course_4"
+        value="course_4"
+        name="course"
+        required
+      />
+      <label for="course_4">4</label><br />
+      <br />
+
+      <label for="comment">Додаткова інформація:</label><br />
+      <textarea id="comment" rows="5" cols="50"></textarea><br /><br />
+
+      <label for="consent">
+        <input type="checkbox" id="consent" name="consent" required />
+        Я погоджуюсь на обробку моїх персональних даних </label
+      ><br />
+
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
