@@ -1,6 +1,9 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
 html,
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -25,12 +28,17 @@ p {
 
 section p {
   font-size: 14px;
-  margin: 0 0;
+  margin: 0;
   text-align: justify;
 }
 
-h2 {
+h2,
+h3 {
   color: #2a2a2a;
+  margin: 0;
+}
+
+h2 {
   font-size: 20px;
 }
 
@@ -38,6 +46,11 @@ h3 {
   font-size: 15px;
   font-weight: normal;
   text-align: left;
+}
+
+h2 + img {
+  margin-right: 10px;
+  width: 160px;
 }
 
 nav,
@@ -51,7 +64,6 @@ footer {
 header {
   background: #ffffff;
   color: rgb(0, 0, 0);
-  width: 800px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -67,7 +79,7 @@ nav {
   align-items: center;
 }
 
-nav ul {
+nav > ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
@@ -78,7 +90,7 @@ nav ul {
 nav li {
   display: inline;
   flex: unset;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -86,8 +98,12 @@ nav a {
   display: inline-block;
   font-size: 15px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
+  color: #ffffff;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 ol li {
@@ -111,11 +127,12 @@ main {
 }
 
 article {
-  flex: 4;
+  flex: 3;
 }
 
 aside {
   flex: 1;
+  margin-left: 20px;
 }
 
 aside li {
@@ -136,4 +153,154 @@ footer {
   white-space: normal;
   padding: 7px;
   font-size: 20px;
+}
+
+.header-title h2 {
+  margin: 0;
+}
+
+.institute-title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 7px;
+  margin-right: 20px;
+}
+
+.profile-img {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  float: left;
+  margin: 0 7px 7px 7px;
+}
+
+.director-title {
+  margin: 0 7px 7px 7px;
+}
+
+.director-name {
+  margin: 0 7px;
+}
+
+a[href*="http://web.kpi.kharkov.ua/infiz/"]
+{
+  display: inline-block;
+  background: #5db9e3;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 130px;
+}
+
+a {
+  color: #a0001b;
+  text-decoration: none;
+}
+
+.email-p {
+  margin-bottom: 40px;
+}
+
+.commission {
+  margin-bottom: 10px;
+}
+
+.telegram a {
+  color: #a0001b;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.email-link,
+.social-link {
+  color: #a0001b;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.email-link:hover,
+.social-link:hover {
+  text-decoration: underline;
+}
+
+#paragraph {
+  margin-top: 15px;
+}
+
+#backdown {
+  margin-top: 40px;
+}
+
+#paragraph1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-item {
+  color: #a0001b;
+  text-decoration: none;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #333333;
+}
+
+aside ~ footer {
+  background: #e0e0e0;
+  padding: 15px;
+}
+
+#schedule {
+  width: 900px;
+  border-collapse: collapse;
+}
+
+#schedule caption {
+  font-size: 40px;
+}
+
+#schedule td,
+#schedule th {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.time-slot {
+  background-color: #a0001b;
+}
+
+#right {
+  text-align: right;
+}
+
+aside > p {
+  font-size: 15px;
+  margin-top: 170px;
+}
+
+footer > address {
+  text-align: left;
+}
+
+address ~ p {
+  font-size: 15px;
+  text-align: center;
+}
+
+#form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 35px;
 }
