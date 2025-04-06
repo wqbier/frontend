@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script>
       // Функція для перевірки співпадання пароля
       function validatePassword() {
@@ -18,143 +19,275 @@
     </script>
   </head>
 
-  <body style="width: 30%">
-    <h2 style="text-align: center">Форма реєстрації студента</h2>
-    <form
-      action="index.php"
-      method="POST"
-      enctype="multipart/form-data"
-      onsubmit="return validatePassword()"
-    >
-      <label for="surname">Прізвище:</label>
-      <input
-        type="text"
-        id="surname"
-        name="surname"
-        maxlength="30"
-        required
-      /><br /><br />
-
-      <label for="name">Ім'я:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        maxlength="30"
-        required
-      /><br /><br />
-
-      <label for="patronymic">По батькові:</label>
-      <input
-        type="text"
-        id="patronymic"
-        name="patronymic"
-        maxlength="30"
-      /><br /><br />
-
-      <label for="email">Електронна пошта:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        maxlength="100"
-        placeholder="example@gmail.com"
-        required
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-      /><br /><br />
-
-      <label for="password">Пароль:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        minlength="8"
-        required
-      /><br /><br />
-
-      <label for="confirm_password">Підтвердження пароля:</label>
-      <input
-        type="password"
-        id="confirm_password"
-        name="confirm_password"
-        required
-        minlength="8"
-      /><br /><br />
-
-      <label for="bday">Дата народження:</label>
-      <input type="date" id="bday" name="bday" required /><br /><br />
-
-      <label for="sex">Стать:</label><br />
-      <input type="radio" id="male" value="male" name="sex" />
-      <label for="male">Чоловік</label><br />
-      <input type="radio" id="female" value="female" name="sex" />
-      <label for="female">Жінка</label><br />
-      <input type="radio" id="other" value="other" name="sex" />
-      <label for="other">Інше</label><br /><br />
-
-      <label for="department">Факультет:</label>
-      <select id="department" name="department" required>
-        <option value="" selected disabled>Оберіть факультет</option>
-        <option value="cs_cybernetics">Комп'ютерні науки та кібернетика</option>
-        <option value="applied_math">Прикладна математика</option>
-        <option value="informatics">Інформатика</option>
-        <option value="informatics_computer_tech">
-          Інформатика та обчислювальна техніка
-        </option>
-        <option value="applied_sciences">Прикладні науки</option>
-        <option value="cs_it">
-          Комп'ютерні науки та інформаційні технології
-        </option>
-        <option value="sys_analysis">
-          Прикладний системний аналіз
-        </option></select
-      ><br /><br />
-
-      <label for="course">Курс навчання:</label><br />
-      <input
-        type="radio"
-        id="course_1"
-        value="course_1"
-        name="course"
-        required
+  <body>
+    <nav></nav>
+    <header>
+      <img
+        src="https://raw.githubusercontent.com/wqbier/frontend/main/img/logo.png"
+        alt="Логотип інституту"
+        class="logo-img"
+        width="60"
       />
-      <label for="course_1">1</label><br />
-      <input
-        type="radio"
-        id="course_2"
-        value="course_2"
-        name="course"
-        required
-      />
-      <label for="course_2">2</label><br />
-      <input
-        type="radio"
-        id="course_3"
-        value="course_3"
-        name="course"
-        required
-      />
-      <label for="course_3">3</label><br />
-      <input
-        type="radio"
-        id="course_4"
-        value="course_4"
-        name="course"
-        required
-      />
-      <label for="course_4">4</label><br />
-      <br />
+      <div class="header-title">
+        <h2>Національний технічний університет</h2>
+        <h2>"Харківський політехнічний інститут"</h2>
+      </div>
+    </header>
 
-      <label for="comment">Додаткова інформація:</label><br />
-      <textarea id="comment" rows="5" cols="50"></textarea><br /><br />
+    <nav>
+      <ul>
+        <li><a href="department.html" target="_blank">Home</a></li>
+        <li>›</li>
+        <li>
+          <a href="https://www.kpi.kharkov.ua/ukr/faculty/i/"
+            >Навчально-науковий інститут комп’ютерного моделювання, прикладної
+            фізики та математики</a
+          >
+        </li>
+      </ul>
 
-      <label for="consent">
-        <input type="checkbox" id="consent" name="consent" required />
-        Я погоджуюсь на обробку моїх персональних даних </label
-      ><br />
+      <form>
+        <input type="search" name="q" placeholder="Введіть запит" />
+        <input type="submit" value="Пошук!" />
+      </form>
+    </nav>
 
-      <input type="reset" />
-      <input type="submit" />
-    </form>
+    <main>
+      <article>
+        <h2 id="form">Форма реєстрації студента</h2>
+        <form
+          action="index.php"
+          method="POST"
+          enctype="multipart/form-data"
+          onsubmit="return validatePassword()"
+        >
+          <label for="surname">Прізвище:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            maxlength="30"
+            required
+          /><br /><br />
+
+          <label for="name">Ім'я:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="30"
+            required
+          /><br /><br />
+
+          <label for="patronymic">По батькові:</label>
+          <input
+            type="text"
+            id="patronymic"
+            name="patronymic"
+            maxlength="30"
+          /><br /><br />
+
+          <label for="email">Електронна пошта:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="100"
+            placeholder="example@gmail.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          /><br /><br />
+
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          /><br /><br />
+
+          <label for="confirm_password">Підтвердження пароля:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+            minlength="8"
+          /><br /><br />
+
+          <label for="bday">Дата народження:</label>
+          <input type="date" id="bday" name="bday" required /><br /><br />
+
+          <label for="sex">Стать:</label><br />
+          <input type="radio" id="male" value="male" name="sex" />
+          <label for="male">Чоловік</label><br />
+          <input type="radio" id="female" value="female" name="sex" />
+          <label for="female">Жінка</label><br />
+          <input type="radio" id="other" value="other" name="sex" />
+          <label for="other">Інше</label><br /><br />
+
+          <label for="department">Факультет:</label>
+          <select id="department" name="department" required>
+            <option value="" selected disabled>Оберіть факультет</option>
+            <option value="cs_cybernetics">
+              Комп'ютерні науки та кібернетика
+            </option>
+            <option value="applied_math">Прикладна математика</option>
+            <option value="informatics">Інформатика</option>
+            <option value="informatics_computer_tech">
+              Інформатика та обчислювальна техніка
+            </option>
+            <option value="applied_sciences">Прикладні науки</option>
+            <option value="cs_it">
+              Комп'ютерні науки та інформаційні технології
+            </option>
+            <option value="sys_analysis">
+              Прикладний системний аналіз
+            </option></select
+          ><br /><br />
+
+          <label for="course">Курс навчання:</label><br />
+          <input
+            type="radio"
+            id="course_1"
+            value="course_1"
+            name="course"
+            required
+          />
+          <label for="course_1">1</label><br />
+          <input
+            type="radio"
+            id="course_2"
+            value="course_2"
+            name="course"
+            required
+          />
+          <label for="course_2">2</label><br />
+          <input
+            type="radio"
+            id="course_3"
+            value="course_3"
+            name="course"
+            required
+          />
+          <label for="course_3">3</label><br />
+          <input
+            type="radio"
+            id="course_4"
+            value="course_4"
+            name="course"
+            required
+          />
+          <label for="course_4">4</label><br />
+          <br />
+
+          <label for="comment">Додаткова інформація:</label><br />
+          <textarea id="comment" rows="5" cols="50"></textarea><br /><br />
+
+          <label for="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            Я погоджуюсь на обробку моїх персональних даних </label
+          ><br />
+
+          <input type="reset" />
+          <input type="submit" />
+        </form>
+      </article>
+
+      <aside>
+        <h2 id="backdown">Кафедри інституту</h2>
+        <hr />
+        <div class="link-container">
+          <ol>
+            <li class="link-item">
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/avtomatizatsiyi-himiko-tehnologichnih-sistem-ta-ekologichnogo-monitoringu/"
+                target="_blank"
+                >Автоматизація технологічних систем та екологічного
+                моніторингу</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/avtomatika-ta-upravlinnya-v-tehnichnih-sistemah/"
+                >Автоматика та управління в технічних системах</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/geometrichne-modelyuvannya-ta-komp-yuterna-grafika/"
+                >Геометричне моделювання та комп’ютерна графіка</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/informatsijno-vimiryuvalni-tehnologiyi-i-sistemi/"
+                >Інформаційно-вимірювальні технології</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/sistem-i-protsesiv-upravlinnya/"
+                >Комп’ютерне моделювання процесів та систем</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/dinamika-ta-mitsnist-mashin/"
+                >Математичне моделювання та інтелектуальні обчислення в
+                інженерії</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/fizichne-materialoznavstvo-dlya-elektroniki-j-gelioenergetiki/"
+                >Мікро- та наноелектроніка</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/prikladna-matematika/"
+                >Прикладна математика</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/radioelektronika/"
+                >Радіоелектроніка</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/sistemi-informatsiyi/"
+                >Системи інформації ім. В.О. Кравця</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/oporu-materialiv/"
+                >Теоретична механіка та oпip матеріалів</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/teoretichnoyi-ta-eksperimentalnoyi-fiziki/"
+                >Фізика</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.kpi.kharkov.ua/ukr/department/fizika-metaliv-ta-napivprovidnikiv/"
+                >Фізика металів і напівпровідників</a
+              >
+            </li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p class="footer-text">© 2025 НТУ «ХПІ». Усі права захищено.</p>
+    </footer>
   </body>
 </html>
