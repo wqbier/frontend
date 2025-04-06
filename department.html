@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="uk">
-  
-<head>
-
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Сторінка</title>
     <link rel="stylesheet" href="css/style.css" />
-  
-</head>
-    
-<body>
+  </head>
+
+  <body>
     <nav></nav>
     <header>
       <img
         src="https://raw.githubusercontent.com/wqbier/frontend/main/img/logo.png"
         alt="Логотип інституту"
+        class="logo-img"
         width="60"
-        style="margin-right: 10px"
       />
-      <div>
-        <h2 style="margin: 0">Національний технічний університет</h2>
-        <h2 style="margin: 0">"Харківський політехнічний інститут"</h2>
+      <div class="header-title">
+        <h2>Національний технічний університет</h2>
+        <h2>"Харківський політехнічний інститут"</h2>
       </div>
     </header>
 
     <nav>
-        <ul>
-        <li>
-          <a href="department.html" target="_blank">Home </a>
-        </li>
+      <ul>
+        <li><a href="department.html" target="_blank">Home</a></li>
         <li>›</li>
         <li>
-          <a href="https://www.kpi.kharkov.ua/ukr/faculty/i/">
-            Навчально-науковий інститут комп’ютерного моделювання, прикладної
-            фізики та математики
-          </a>
+          <a href="https://www.kpi.kharkov.ua/ukr/faculty/i/"
+            >Навчально-науковий інститут комп’ютерного моделювання, прикладної
+            фізики та математики</a
+          >
         </li>
       </ul>
 
@@ -47,94 +42,109 @@
     </nav>
 
     <main>
-        <article>
+      <article>
         <h1>Студентам та абітурієнтам</h1>
         <section>
-            <hr>
-        <table style="cellspacing="2" border="1" cellpadding="5" width="900">
-            <caption style="font-size:40px">Розклад занять</caption>
-                <tr>
-                  <td></td>
-                  <td>Понеділок</td>
-                  <td>Вівторок</td>
-                  <td>Середа</td>
-                  <td>Четвер</td>
-                  <td>П'ятниця</td>
-                </tr>
-                <tr>
-                  <td style="background-color: #a0001b;">8:30</td>
-                  <td>ФВ</td>
-                  <td></td>
-                  <td></td>
-                  <td></td><td></td>
-                </tr>
-                <tr>
-                  <td style="background-color: #a0001b;">10:25</td>
-                  <td>ЛК Комп'ютерні мережі </td>
-                  <td>ЛК Frontendрозробка</td>
-                  <td>ЛК Теорія ймовірностей</td>
-                  <td>ПЗ Філософія</td>
-                  <td>ФВ</td>
-                </tr>
-                <tr>
-                  <td style="background-color: #a0001b;">12:35</td>
-                  <td>ПЗ Іноземна мова</td>
-                  <td>Лаб Frontendрозробка</td>
-                  <td>ЛК Обчислювальні методи</td>
-                  <td>Лаб Теорія ймовірностей</td>
-                  <td>Лаб Обчислювальні методи</td>
-                </tr>
-                <tr>
-                  <td style="background-color: #a0001b;">14:30</td>
-                  <td>ЛК Системи символьних обчислень</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>Лаб Системи символьних обчислень</td>
-                </tr>
-              </table>
+          <hr />
+          <table id="schedule">
+            <caption>
+              Розклад занять
+            </caption>
+            <tr>
+              <td></td>
+              <td>Понеділок</td>
+              <td>Вівторок</td>
+              <td>Середа</td>
+              <td>Четвер</td>
+              <td>П'ятниця</td>
+            </tr>
+            <tr>
+              <td class="time-slot">8:30</td>
+              <td>ФВ</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-slot">10:25</td>
+              <td>ЛК Комп'ютерні мережі</td>
+              <td>ЛК Frontendрозробка</td>
+              <td>ЛК Теорія ймовірностей</td>
+              <td>ПЗ Філософія</td>
+              <td>ФВ</td>
+            </tr>
+            <tr>
+              <td class="time-slot">12:35</td>
+              <td>ПЗ Іноземна мова</td>
+              <td>Лаб Frontendрозробка</td>
+              <td>ЛК Обчислювальні методи</td>
+              <td>Лаб Теорія ймовірностей</td>
+              <td>Лаб Обчислювальні методи</td>
+            </tr>
+            <tr>
+              <td class="time-slot">14:30</td>
+              <td>ЛК Системи символьних обчислень</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Лаб Системи символьних обчислень</td>
+            </tr>
+          </table>
 
-        <p>*Останнє оновлення розкладу: <time datetime="2025-03-28T09:00">28 березня 2025, 09:00</time></p>
-        <p><b>Джерело інформації:</b> <cite>Офіційний сайт університету</cite>.</p>
-        <h2>Порахувати середній бал студента</h2>
-        <form oninput="result.value=parseInt(exam1.value)+parseInt(exam2.value)+parseInt(exam3.value)">
+          <p>
+            *Останнє оновлення розкладу:
+            <time datetime="2025-03-28T09:00">28 березня 2025, 09:00</time>
+          </p>
+          <p>
+            <b>Джерело інформації:</b> <cite>Офіційний сайт університету</cite>.
+          </p>
+          <h2 id="paragraph1">Порахувати середній бал студента</h2>
+          <form
+            oninput="result.value=parseInt(exam1.value)+parseInt(exam2.value)+parseInt(exam3.value)"
+          >
             <b>Введіть бали за перший екзамен: </b>
-            <input type="number" id="exam1" value="0"><br>
-             <b>Введіть бали за другий екзамен: </b>
-            <input type="number" id="exam2" value="0"><br>
-            <b> Введіть бали за третій екзамен:  </b>
-            <input type="number" id="exam3" value="0"><br>
-             <b>Загальний бал: </b>
+            <input type="number" id="exam1" value="0" /><br />
+            <b>Введіть бали за другий екзамен: </b>
+            <input type="number" id="exam2" value="0" /><br />
+            <b> Введіть бали за третій екзамен: </b>
+            <input type="number" id="exam3" value="0" /><br />
+            <b>Загальний бал: </b>
             <output name="result" for="exam1 exam2 exam3">0</output>
-        </form>
-        <p style="margin-top: 15px">Для обчислення середнього балу студента використовується код:
+          </form>
+          <p id="paragraph">
+            Для обчислення середнього балу студента використовується код:
             <code>let average = (subject1 + subject2 + subject3) / 3;</code>
-        </p>
-        <p>Середній бал студента: <var>average</var>.</p>
-    </section>
-    <section>
-        <h2>Програма стажування</h2>
-        <p>Програма стажування в нашому університеті включає співпрацю з провідними компаніями в галузі IT та інженерії. Для участі необхідно подати заявку до <time datetime="2025-05-01">1 травня 2025 року</time>.</p>
-    </section>
-    <h3 style="text-align: right">
+          </p>
+          <p id="paragraph">Середній бал студента: <var>average</var>.</p>
+        </section>
+        <section>
+          <h2 id="paragraph1">Програма стажування</h2>
+          <p>
+            Програма стажування в нашому університеті включає співпрацю з
+            провідними компаніями в галузі IT та інженерії. Для участі необхідно
+            подати заявку до
+            <time datetime="2025-05-01">1 травня 2025 року</time>.
+          </p>
+        </section>
+        <h3 id="right">
           Дата та час публікації:
           <time datetime="2025-03-28T14:30">28 березня 2025, 14:30</time>
-    </h3>
+        </h3>
       </article>
-      <aside >
-        <p style="font-size: 15px;margin-top: 170px">Заняття з <s>математики для першокурсників</s> перенесено.</p>
+      <aside>
+        <p>Заняття з <s>математики для першокурсників</s> перенесено.</p>
       </aside>
     </main>
 
     <footer>
-        <address style="text-align: left">
-            Контактна інформація НТУ «ХПІ»: <br />
-            Адреса: вул. Кирпичова, 2 Харків, Україна <br />
-            Телефон: <a href="tel:+380123456789">+38 (057) 707-66-00</a><br />
-            Email: <a href="vstup.ikm@khpi.edu.ua">vstup.ikm@khpi.edu.ua</a>
-          </address>
-          <p style="font-size: 15px; text-align: center">© 2025 НТУ «ХПІ». Усі права захищено.</p>
+      <address>
+        Контактна інформація НТУ «ХПІ»: <br />
+        Адреса: вул. Кирпичова, 2 Харків, Україна <br />
+        Телефон: <a href="tel:+380123456789">+38 (057) 707-66-00</a><br />
+        Email: <a href="vstup.ikm@khpi.edu.ua">vstup.ikm@khpi.edu.ua</a>
+      </address>
+      <p>© 2025 НТУ «ХПІ». Усі права захищено.</p>
     </footer>
-
   </body>
 </html>
