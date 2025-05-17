@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency Landing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-container">
+    <header class="header">
+      <div class="logo">
+        <img
+          src="https://raw.githubusercontent.com/wqbier/frontend/main/img/epixelab.png"
+          alt="Epixelab Hero"
+        />
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="home">Home</a>
+        <a href="#" class="about">About Us</a>
+        <a href="#" class="app">Our App</a>
+        <a href="#" class="contacts">Contacts</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="#" class="login">Log in</a>
+        <a href="#" class="signup">Sign up</a>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <div class="container">
+        <h1>
+          We boost<br />
+          growth for your<br />
+          statup business
+        </h1>
+        <p>
+          Our goal is top at the heart of creativity services industry as a
+          digital creator. <br />In has a after comment
+        </p>
+        <div class="buttons-group">
+          <button class="btn-primary">Get Started</button>
+          <div class="learn-more">
+            <div class="icon-wrapper">
+              <div class="arc"></div>
+              <div class="circle">
+                <div class="play"></div>
+              </div>
+            </div>
+            <span class="btn-text">Learn More</span>
+          </div>
+        </div>
+
+        <div class="group-growth">
+          <div class="rectangle-2" style="padding-left: 55px">
+            <div class="vector-icon"></div>
+            <div class="group-3">
+              <div class="text-main">100% Business Growth</div>
+              <div class="group-2">
+                <div class="star-icon"></div>
+                <div class="text-rating">4.9</div>
+                <div class="text-reviews">(1520 Reviews)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-4">
+          <div class="rectangle-2">
+            <div class="group-3">
+              <div class="text-main">1000,000 Happy Clients</div>
+              <div class="group-2">
+                <div class="star-icon"></div>
+                <div class="text-rating">4.9</div>
+                <div class="text-reviews">(15k Reviews)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group10"></div>
+        <div class="image"></div>
+      </div>
+
+      <div class="new-block">
+        <div class="group-11">
+          <div class="service-text">SERVICE</div>
+          <div class="vision-goal-text">Our Vision & Our Goal</div>
+        </div>
+      </div>
+
+      <div class="group-rectangles">
+        
+        <div class="rectangle">
+          <div class="card">
+            <div class="design-icon"></div>
+            <h3 class="card-title">Graphic Design</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
+            </p>
+            <div class="card-button">
+              <button>Learn More</button>
+            </div>
+          </div> 
+        </div> 
+      
+        <div class="rectangle">
+          <div class="card">
+            <div class="video-icon"></div>
+            <h3 class="card-title">Video Editing</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
+            </p>
+            <div class="card-button">
+              <button>Learn More</button>
+            </div>
+          </div> 
+        </div> 
+        
+        <div class="rectangle">          
+          <div class="card">
+          <div class="marketing-icon"></div>
+          <h3 class="card-title">Digital Marketing</h3>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.
+          </p>
+          <div class="card-button">
+            <button>Learn More</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="group-19">
+      <div class="group-19-left">
+        <h2 class="group-title">Many Blocks and <br> Components</h2>
+        <p class="group-text">
+          Startup Framework contains components <br> and complex blocks which can easily be <br> integrated into almost any design.
+        </p>
+        <button class="explore-button">Explore</button>
+      </div>
+    
+      <div class="group-19-right">
+        <div class="video-container">
+          <video class="video-player" src="" type="video/mp4" controls></video>
+          <div class="video-overlay">
+            <div class="video-icons">▶</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="team-section">
+      <p class="team-label">TESTMONIALS</p>
+      <h2 class="team-title">What Clients say about us</h2>
+    </div> 
+    
+      <div class="group-20">
+        <div class="testimonial-card">
+          <img class="userpic" src="https://github.com/wqbier/frontend/blob/main/img/%D1%84%D0%BE%D1%82%D0%BE1.jpg?raw=true"  />
+          <div class="testimonial-text">
+            <p class="quote">
+              Get a fully retina ready site when <br> you build with Startup Framework.<br> Websites look sharper and more <br> gorgeous on devices with retina <br> display support
+            </p>
+            <p class="author">Rayhan Curran</p>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img class="userpic" src="https://github.com/wqbier/frontend/blob/main/img/%D1%84%D0%BE%D1%82%D0%BE2.jpg?raw=true"  />
+          <div class="testimonial-text">
+            <p class="quote">As a business targeting high net <br> worth individuals, we were looking <br> for a slick, cool and mini-malistic <br> design for our website</p>
+            <p class="author">Kayley Frame</p>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img class="userpic" src="https://github.com/wqbier/frontend/blob/main/img/%D1%84%D0%BE%D1%82%D0%BE3.jpg?raw=true"  />
+          <div class="testimonial-text">
+            <p class="quote">The most important part of the <br> Startup Framework is the samples</p>
+            <p class="author">Gene Whitfield</p>
+          </div>
+        </div>
+    
+        <div class="testimonial-card">
+          <img class="userpic" src="https://github.com/wqbier/frontend/blob/main/img/%D1%84%D0%BE%D1%82%D0%BE4.jpg?raw=true" />
+          <div class="testimonial-text">
+            <p class="quote">I’ve built my website with Startup <br> just in one day, and it was ready-to- <br> go. </p>
+            <p class="author">Allan Kim</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="team-section">
+      <p class="team-label">OUR TEAM</p>
+      <h2 class="team-title">Meet The Team</h2>
+    </div>
+    
+    <div class="group-23">
+      <div class="member">
+        <img class="userpicture" src="https://github.com/wqbier/frontend/blob/main/img/Userpic1.png?raw=true" />
+        
+        <p class="member-name">Vanessa Laird</p>
+        <p class="member-role">UI Designer</p>
+        
+        <div class="divider">
+          <div class="line-horizontal"></div>
+          <div class="line-vertical line-1"></div>
+          <div class="line-vertical line-2"></div>
+        </div>
+        
+        <div class="icons">
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-twitter.png?raw=true"  />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-facebook-square.png?raw=true" />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-dribbble.png?raw=true" />
+        </div>
+      </div>
+      
+      <div class="member">
+        <img class="userpicture" src="https://github.com/wqbier/frontend/blob/main/img/Userpic2.png?raw=true" />
+        
+        <p class="member-name">Mason Campbell</p>
+        <p class="member-role">UI Designer</p>
+        
+        <div class="divider">
+          <div class="line-horizontal"></div>
+          <div class="line-vertical line-1"></div>
+          <div class="line-vertical line-2"></div>
+        </div>
+        
+        <div class="icons">
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-twitter.png?raw=true" />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-facebook-square.png?raw=true"  />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-dribbble.png?raw=true" />
+        </div>
+      </div>
+      
+      <div class="member">
+        <img class="userpicture" src="https://github.com/wqbier/frontend/blob/main/img/Userpic3.png?raw=true" />
+        
+        <p class="member-name">Irea Evans</p>
+        <p class="member-role">Client Manager</p>
+        
+        <div class="divider">
+          <div class="line-horizontal"></div>
+          <div class="line-vertical line-1"></div>
+          <div class="line-vertical line-2"></div>
+        </div>
+        
+        <div class="icons">
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-twitter.png?raw=true"  />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-facebook-square.png?raw=true"  />
+          <img src="https://github.com/wqbier/frontend/blob/main/img/fa-dribbble.png?raw=true"  />
+        </div>
+      </div>
+    </div>
+
+       <div class="team-section">
+      <p class="team-label">OUR TEAM</p>
+      <h2 class="team-title">Subscribe Our Newsleter</h2>
+    </div> 
+      
+    <div class="group-24">
+      <div class="content-wrapper">
+        <img class="frame1" src="https://github.com/wqbier/frontend/blob/main/img/Frame1.png?raw=true">
+    
+        <div class="right-column">
+          <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          
+          <div class="group-22">
+            <div class="rectangle-10">
+              <input class="email-input" placeholder="Your E-mail here…" />
+            </div>
+          </div>
+          
+          <div class="group-21">
+            <button class="subscribe-button">Subscribe Our Newsletter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </main>
+  </body>
+</html>
