@@ -1,0 +1,884 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+.site-container {
+  max-width: 1440px; /* або інша ширина, наприклад 1200px */
+  margin: 0 auto;
+  position: relative; /* щоб позиционированные элементы (absolute) были от нее */
+}
+
+header.header {
+  position: absolute;
+  top: 48px;
+  width: 100%;
+  height: 49px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 240px;
+  height: 49px;
+}
+
+.logo img {
+  width: 240px;
+  height: 49px;
+  display: block;
+}
+
+nav.nav {
+  flex: 0 0 378px;
+  height: 29px;
+  display: flex;
+  gap: 38px;
+  align-items: center;
+  margin-left: 111px;
+}
+
+nav.nav a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 28.5px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+
+nav.nav a.home {
+  font-weight: 700;
+  width: 47px;
+}
+
+nav.nav a.about {
+  font-weight: 500;
+  width: 72px;
+}
+
+nav.nav a.app {
+  font-weight: 500;
+  width: 68px;
+}
+
+nav.nav a.contacts {
+  font-weight: 500;
+  width: 71px;
+}
+
+.auth-buttons {
+  flex: 0 0 188px;
+  height: 49px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.auth-buttons .login {
+  height: 29px;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.5px;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 4px;
+  background: transparent;
+  min-width: 47px;
+}
+
+.auth-buttons .signup {
+  width: 119px;
+  height: 49px;
+  border-radius: 10px;
+  background: #ff6600;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section .container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Заголовок */
+.main-section .container h1 {
+  position: absolute; /* чтобы задать точное положение */
+  top: 211px;
+  font-family: "Ageo", sans-serif; /* убедись, что шрифт подключен */
+  font-weight: 850;
+  font-size: 70px;
+  line-height: 81px;
+  color: #0b1b35; /* цвет текста */
+  display: flex; /* чтобы вертикально выровнять текст по высоте блока */
+}
+
+/* Абзац */
+.main-section .container p {
+  position: absolute; /* чтобы задать точное положение */
+  top: 487px;
+  font-family: Ageo;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28.5px;
+  display: flex; /* чтобы вертикально выровнять текст по высоте блока */
+  align-items: center;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  width: 162px;
+  height: 49px;
+  border-radius: 10px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-family: "Ageo", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.buttons-group {
+  position: absolute;
+  top: 615px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+/* Оранжевая дуга */
+.arc {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border: 4px solid #ff6600;
+  border-radius: 50%;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  transform: rotate(0deg);
+}
+
+/* Серая окружность */
+.circle {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 33px;
+  height: 33px;
+  background: #5f6064;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Белый треугольник (Play) */
+.play {
+  width: 0;
+  height: 0;
+  border-left: 12px solid white;
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  margin-left: 3px;
+}
+
+.btn-text {
+  width: 94px;
+  height: 29px;
+  top: 625px;
+  left: 400px;
+  font-family: Ageo;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28.5px;
+  color: #000000;
+}
+
+.vector-icon {
+  position: absolute;
+  top: 16px; /* 201 - 185 */
+  left: 10px; /* 723 - 708 */
+  width: 40px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Vector.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+
+.group-growth {
+  position: absolute;
+  top: 190px; /* вирівнюємо з верхнім блоком */
+  left: 800px; /* так само як у .group-4 */
+  width: 400px;
+  height: 75px; /* зробимо трохи вище */
+  z-index: 2; /* щоб перекривав інші */
+  padding-left: 50px; /* отступ справа от вектора */
+}
+
+.group-2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-icon {
+  width: 14.17px;
+  height: 13.46px;
+  background: #febb43;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.text-rating {
+  font-family: Ageo, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.text-reviews {
+  font-family: Ageo, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #8a898e;
+  white-space: nowrap;
+}
+
+.group-4 {
+  position: absolute;
+  top: 574px;
+  left: 770px;
+  width: 280px;
+  height: 73px;
+  z-index: 1;
+}
+
+.rectangle-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 2.77px 2.21px 0px #00000005, 0px 6.65px 5.32px 0px #00000007,
+    0px 12.52px 10.02px 0px #00000009, 0px 22.34px 17.87px 0px #0000000b,
+    0px 41.78px 33.42px 0px #0000000d, 0px 100px 80px 0px #00000012;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.group-3 {
+  width: 149px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.text-main {
+  font-family: Ageo, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.group10 {
+  position: absolute; /* чтобы сработали top и left */
+  width: 639.569px; /* округлил до 3 знаков */
+  height: 330.618px;
+  top: 217px;
+  left: 830px;
+  background-image: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Group%2010.svg");
+  background-repeat: no-repeat;
+  background-size: contain; /* чтобы SVG масштабировался внутри блока */
+  background-position: center;
+}
+
+.image {
+  position: absolute;
+  width: 730px;
+  height: 732px;
+  top: 163px;
+  left: 840px;
+  background-image: url("https://raw.githubusercontent.com/wqbier/frontend/main/img/Image%20(1).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.new-block {
+  width: 100%;
+  top: 823px;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  position: relative;
+}
+
+.group-11 {
+  width: 500px;
+  height: 77px;
+  background: transparent;
+  position: relative; /* чтобы .vision-goal-text отталкивался от него */
+  margin: 0 auto; /* центрируем .group-11 в родителе, если нужно */
+}
+
+.service-text {
+  width: 92px;
+  height: 29px;
+  margin: 0 auto; /* горизонтальное центрирование */
+  font-family: "Ageo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28.5px;
+  letter-spacing: 0.45em;
+  text-align: center;
+  color: #8a898e;
+  -webkit-text-stroke: 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* чтобы не мешало абсолютное позиционирование */
+}
+
+.vision-goal-text {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%); /* сдвигаем влево на половину ширины */
+
+  width: max-content; /* ширина по содержимому, или задай точно */
+  height: 29px;
+
+  font-family: "Ageo", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 28.5px;
+  text-align: center;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.group-rectangles {
+  width: 100%;
+  margin-top: 950px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  gap: 20px;
+}
+
+.rectangle {
+  position: relative; /* важно для позиционирования вложенной карточки */
+  width: 400px;
+  height: 508px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  /* суммируем тени (box-shadow) в один */
+  box-shadow: 0px 2.77px 2.21px 0px rgba(0, 0, 0, 0.05),
+    0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.07),
+    0px 12.52px 10.02px 0px rgba(0, 0, 0, 0.09),
+    0px 22.34px 17.87px 0px rgba(0, 0, 0, 0.11),
+    0px 41.78px 33.42px 0px rgba(0, 0, 0, 0.13),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.18);
+}
+
+.card {
+  position: absolute; /* обязательно, чтобы z-index работал */
+  z-index: 10;
+  width: 100%;
+  padding: 40px 20px;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-family: "Ageo", sans-serif; /* обов’язково підключити шрифт */
+}
+
+.design-icon {
+  width: 76.5px;
+  height: 76.5px;
+  background-image: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Vector.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-title {
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 28.5px; /* Це виглядає дивно менше за font-size, але ок */
+  margin: 20px;
+  white-space: nowrap;
+}
+
+.card-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28.5px;
+  margin: 0;
+  width: 270px;
+}
+
+.card-button button {
+  width: 162px;
+  height: 49px;
+  background: #ff6600;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28.5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  -webkit-text-stroke: 1px black;
+}
+
+.card-button button:hover {
+  background: #e65c00;
+}
+
+.video-icon {
+  width: 76.5px;
+  height: 76.5px;
+  background-image: url("https://raw.githubusercontent.com/wqbier/frontend/main/img/Video.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marketing-icon {
+  width: 76.5px;
+  height: 76.5px;
+  background-image: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Chart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.group-19 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 150px;
+}
+
+.group-19-left {
+  width: 400px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.group-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  color: #1e0e62;
+}
+
+.group-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(21, 20, 57, 0.4);
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  width: 133px;
+  height: 48px;
+  border: 2px solid #ebeaed;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #1e0e62;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.group-19-right {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84px;
+  height: 84px;
+  background-color: #482be7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-icons {
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Ageo", sans-serif;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+}
+
+.group-20 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 колонки */
+  gap: 30px;
+  width: 80%; /* например, ограничить ширину */
+  max-width: 900px; /* максимальная ширина */
+  margin: 0 auto; /* центр по горизонтали */
+}
+
+.testimonial-card {
+  display: flex;
+  background-color: transparent;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 30px;
+  height: 100%; /* додано: всі картки однієї висоти в сітці */
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.userpic {
+  width: 15%;
+  max-width: 70px;
+  border-radius: 10px;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* рівномірно розкидає */
+  height: 100%;
+}
+
+.quote {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px; /* 18px */
+  line-height: 28px;
+  color: #0b1b35;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0b1b35;
+  opacity: 0.3;
+  margin-top: auto;
+}
+
+.team-section {
+  width: 50%;
+  margin: 120px auto 80px;
+  text-align: center;
+  min-height: 150px; /* например, фиксированная минимальная высота */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-label {
+  font-family: "Ageo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28.5px;
+  letter-spacing: 45%;
+  color: #8a898e;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  font-family: "Ageo", sans-serif;
+  font-weight: 700;
+  font-size: 52px; /* 52px */
+  line-height: 1.2;
+  color: #0b1b35;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.group-23 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* промежуток между блоками */
+}
+
+.member {
+  width: 31.6%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #ebeaed; /* Добавлено! */
+  border-radius: 10px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  color: #1e0e62;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.userpicture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #1e0e62;
+  width: 145px;
+  margin: 0 auto;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+.member-role {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3px 0;
+  color: #15143966;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.divider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 60.5px;
+  margin: 15px auto 0 auto;
+}
+
+.line-horizontal {
+  position: absolute;
+  bottom: -25px; /* чтобы линия была на нижней границе divider */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ebeaed;
+  z-index: 1;
+}
+
+.line-vertical {
+  position: absolute;
+  top: 140%; /* начало от верха .divider */
+  width: 2px;
+  height: 105%; /* высота до горизонтальной линии */
+  background: #ebeaed;
+  z-index: 2;
+}
+
+.line-1 {
+  left: 32%; /* пример расположения, можно подогнать */
+}
+
+.line-2 {
+  left: 68%; /* пример расположения */
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3; /* поверх линий */
+  margin-top: 30px; /* небольшой отступ сверху, чтобы не налезали */
+}
+
+.icons img {
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+}
+
+.group-24 {
+  width: 1440px;
+  margin: 60px auto; /* центр по горизонтали и сверху снизу отступ */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.frame1 {
+  width: 500px;
+}
+
+.description-text {
+  max-width: 684px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.5px;
+  letter-spacing: 0;
+  color: #000;
+  margin-top: 30px;
+}
+
+.group-22 {
+  width: 700px;
+  margin: 50px 0 50px 0;
+  /* сверху 10px, справа 15px, снизу 20px, слева 25px */
+  /* центр и нижний отступ */
+}
+
+.rectangle-10 {
+  width: 100%;
+  height: 77px;
+  border: 1px solid #ebeaed; /* чёрная рамка */
+  border-radius: 49px;
+  box-sizing: border-box;
+  position: relative;
+  background-clip: padding-box;
+}
+
+.email-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 50px; /* отступ слева */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.5px;
+  background: transparent;
+  border-radius: 49px;
+  box-sizing: border-box;
+}
+
+.group-21 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.subscribe-button {
+  width: 100%;
+  height: 49px;
+  border-radius: 10px;
+  border: none;
+  background: #ff6600;
+  font-family: "Ageo", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.5px;
+  letter-spacing: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
