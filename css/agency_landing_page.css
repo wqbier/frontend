@@ -120,29 +120,27 @@ nav.nav a.contacts {
   position: relative;
 }
 
-/* Заголовок */
 .main-section .text-content h1 {
-  position: absolute; /* чтобы задать точное положение */
+  position: absolute;
   top: 211px;
-  font-family: "Ageo", sans-serif; /* убедись, что шрифт подключен */
+  font-family: "Ageo", sans-serif;
   font-weight: 850;
   font-size: 70px;
   line-height: 81px;
-  color: #0b1b35; /* цвет текста */
-  display: flex; /* чтобы вертикально выровнять текст по высоте блока */
+  color: #0b1b35;
+  display: flex;
   align-items: center;
 }
 
-/* Абзац */
 .main-section .text-content p {
-  position: absolute; /* чтобы задать точное положение */
+  position: absolute;
   top: 487px;
   font-family: Ageo;
   font-weight: 500;
   font-size: 22px;
   line-height: 28.5px;
   color: #000;
-  display: flex; /* чтобы вертикально выровнять текст по высоте блока */
+  display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -185,7 +183,6 @@ nav.nav a.contacts {
   height: 56px;
 }
 
-/* Оранжевая дуга */
 .arc {
   position: absolute;
   width: 56px;
@@ -196,7 +193,6 @@ nav.nav a.contacts {
   transform: rotate(0deg);
 }
 
-/* Серая окружность */
 .circle {
   position: absolute;
   top: 11px;
@@ -210,7 +206,6 @@ nav.nav a.contacts {
   justify-content: center;
 }
 
-/* Белый треугольник (Play) */
 .play {
   width: 0;
   height: 0;
@@ -234,12 +229,12 @@ nav.nav a.contacts {
 
 .background-data {
   position: absolute;
-  top: 190px; /* вирівнюємо з верхнім блоком */
-  left: 800px; /* так само як у .group-4 */
+  top: 190px;
+  left: 800px;
   width: 400px;
-  height: 75px; /* зробимо трохи вище */
-  z-index: 2; /* щоб перекривав інші */
-  padding-left: 50px; /* отступ справа от вектора */
+  height: 75px;
+  z-index: 2;
+  padding-left: 50px;
 }
 
 .rectangle-1 {
@@ -259,8 +254,8 @@ nav.nav a.contacts {
 
 .iconly-activity {
   position: absolute;
-  top: 16px; /* 201 - 185 */
-  left: 10px; /* 723 - 708 */
+  top: 16px;
+  left: 10px;
   width: 40px;
   height: 40px;
   background: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Vector.svg")
@@ -338,14 +333,14 @@ nav.nav a.contacts {
 }
 
 .group-5 {
-  position: absolute; /* чтобы сработали top и left */
-  width: 639.569px; /* округлил до 3 знаков */
+  position: absolute;
+  width: 639.569px;
   height: 330.618px;
   top: 217px;
   left: 830px;
   background-image: url("https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/Group%2010.svg");
   background-repeat: no-repeat;
-  background-size: contain; /* чтобы SVG масштабировался внутри блока */
+  background-size: contain;
   background-position: center;
 }
 
@@ -366,7 +361,7 @@ nav.nav a.contacts {
   width: 100%;
   top: 823px;
   display: flex;
-  justify-content: center; /* по горизонтали */
+  justify-content: center;
   position: relative;
 }
 
@@ -374,14 +369,14 @@ nav.nav a.contacts {
   width: 500px;
   height: 77px;
   background: transparent;
-  position: relative; /* чтобы .vision-goal-text отталкивался от него */
-  margin: 0 auto; /* центрируем .group-11 в родителе, если нужно */
+  position: relative;
+  margin: 0 auto;
 }
 
 .service-text {
   width: 92px;
   height: 29px;
-  margin: 0 auto; /* горизонтальное центрирование */
+  margin: 0 auto;
   font-family: "Ageo", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -393,7 +388,7 @@ nav.nav a.contacts {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* чтобы не мешало абсолютное позиционирование */
+  position: relative;
 }
 
 .vision-goal-text {
@@ -401,7 +396,7 @@ nav.nav a.contacts {
   top: 48px;
   left: 50%;
   transform: translateX(-50%);
-  width: max-content; /* ширина по содержимому, или задай точно */
+  width: max-content;
   height: 29px;
   font-family: "Ageo", sans-serif;
   font-weight: 700;
@@ -425,7 +420,7 @@ nav.nav a.contacts {
 }
 
 .rectangle {
-  position: relative; /* важно для позиционирования вложенной карточки */
+  position: relative;
   width: 400px;
   height: 508px;
   border-radius: 28px;
@@ -441,7 +436,7 @@ nav.nav a.contacts {
 }
 
 .card {
-  position: absolute; /* обязательно, чтобы z-index работал */
+  position: absolute;
   z-index: 10;
   width: 100%;
   padding: 40px 20px;
@@ -452,7 +447,7 @@ nav.nav a.contacts {
   align-items: center;
   text-align: center;
   gap: 20px;
-  font-family: "Ageo", sans-serif; /* обов’язково підключити шрифт */
+  font-family: "Ageo", sans-serif;
 }
 
 .design-icon,
@@ -480,7 +475,7 @@ nav.nav a.contacts {
 .card-title {
   font-weight: 1000;
   font-size: 36px;
-  line-height: 28.5px; /* Це виглядає дивно менше за font-size, але ок */
+  line-height: 28.5px;
   margin: 20px 0;
   white-space: nowrap;
 }
@@ -596,7 +591,7 @@ nav.nav a.contacts {
   width: 50%;
   margin: 120px auto 80px;
   text-align: center;
-  min-height: 150px; /* например, фиксированная минимальная высота */
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -615,7 +610,7 @@ nav.nav a.contacts {
 .team-title {
   font-family: "Ageo", sans-serif;
   font-weight: 700;
-  font-size: 52px; /* 52px */
+  font-size: 52px;
   line-height: 1.2;
   color: #0b1b35;
   margin: 0;
@@ -624,11 +619,11 @@ nav.nav a.contacts {
 
 .group-9 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 колонки */
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
-  width: 80%; /* например, ограничить ширину */
-  max-width: 900px; /* максимальная ширина */
-  margin: 0 auto; /* центр по горизонтали */
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .testimonial-card {
@@ -637,7 +632,7 @@ nav.nav a.contacts {
   padding: 30px;
   align-items: flex-start;
   gap: 30px;
-  height: 100%; /* додано: всі картки однієї висоти в сітці */
+  height: 100%;
   box-sizing: border-box;
   flex-direction: row;
 }
@@ -651,14 +646,14 @@ nav.nav a.contacts {
 .testimonial-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* рівномірно розкидає */
+  justify-content: space-between;
   height: 100%;
 }
 
 .quote {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px; /* 18px */
+  font-size: 18px;
   line-height: 28px;
   color: #0b1b35;
   margin-bottom: 20px;
@@ -682,13 +677,13 @@ nav.nav a.contacts {
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
-  gap: 30px; /* промежуток между блоками */
+  gap: 30px;
 }
 
 .member {
   width: 455px;
   aspect-ratio: 1 / 1;
-  border: 2px solid #ebeaed; /* Добавлено! */
+  border: 2px solid #ebeaed;
   border-radius: 10px;
   padding-top: 50px;
   box-sizing: border-box;
@@ -744,7 +739,7 @@ nav.nav a.contacts {
 
 .line-horizontal {
   position: absolute;
-  bottom: -25px; /* чтобы линия была на нижней границе divider */
+  bottom: -25px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -754,19 +749,19 @@ nav.nav a.contacts {
 
 .line-vertical {
   position: absolute;
-  top: 140%; /* начало от верха .divider */
+  top: 140%;
   width: 2px;
-  height: 105%; /* высота до горизонтальной линии */
+  height: 105%;
   background: #ebeaed;
   z-index: 2;
 }
 
 .line-1 {
-  left: 32%; /* пример расположения, можно подогнать */
+  left: 32%;
 }
 
 .line-2 {
-  left: 68%; /* пример расположения */
+  left: 68%;
 }
 
 .icons {
@@ -777,7 +772,7 @@ nav.nav a.contacts {
   border-radius: 5px;
   margin: 30px auto 0 auto;
   position: relative;
-  z-index: 3; /* поверх линий */
+  z-index: 3;
 }
 
 .icons img {
@@ -788,7 +783,7 @@ nav.nav a.contacts {
 
 .group-11 {
   width: 1440px;
-  margin: 60px auto; /* центр по горизонтали и сверху снизу отступ */
+  margin: 60px auto;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -808,7 +803,7 @@ nav.nav a.contacts {
   display: flex;
   flex-direction: column;
   max-width: 684px;
-  margin-left: 190px; /* отступ от картинки */
+  margin-left: 190px;
 }
 
 .description-text {
@@ -824,14 +819,12 @@ nav.nav a.contacts {
 .group-13 {
   width: 700px;
   margin: 50px 0 50px 0;
-  /* сверху 10px, справа 15px, снизу 20px, слева 25px */
-  /* центр и нижний отступ */
 }
 
 .group-13-rectangle {
   width: 100%;
   height: 77px;
-  border: 1px solid #ebeaed; /* чёрная рамка */
+  border: 1px solid #ebeaed;
   border-radius: 49px;
   box-sizing: border-box;
   position: relative;
@@ -843,7 +836,7 @@ nav.nav a.contacts {
   height: 100%;
   border: none;
   outline: none;
-  padding-left: 50px; /* отступ слева */
+  padding-left: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -882,11 +875,11 @@ nav.nav a.contacts {
 
 .group-15 {
   display: flex;
-  justify-content: space-between; /* копирайтинг слева, меню справа */
+  justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  width: 100%; /* 570 + 455 = 1025 */
-  height: 27px; /* берем максимальную высоту */
+  width: 100%;
+  height: 27px;
   margin: 30px auto;
   box-sizing: border-box;
 }
@@ -901,7 +894,7 @@ nav.nav a.contacts {
 }
 
 .copyright img {
-  height: 26px; /* по высоте текста */
+  height: 26px;
   width: auto;
   display: block;
 }
