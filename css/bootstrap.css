@@ -1,0 +1,9 @@
+body {
+  padding-top: 70px;
+}
+section {
+  padding: 60px 0;
+}
+.text-justify {
+  text-align: justify;
+}
