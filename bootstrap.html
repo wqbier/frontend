@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адаптивна сторінка з Bootstrap 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/main.js" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <div style="flex: 1"></div>
+        <a class="navbar-brand mx-auto" href="#" style="flex: 0">
+          <img
+            src="https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/logo.svg"
+            alt="Логотип"
+            height="60"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <div
+          class="d-flex align-items-center"
+          style="flex: 1; justify-content: flex-end"
+        >
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Каталог товарів</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel">Нові пропозиції</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form">Форма</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Про нас</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="cards" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Вироби з білого золота</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%821.png"
+                class="card-img-top"
+                alt="Product 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">41 290₴</h5>
+                <p class="card-text text-justify">
+                  Каблучка з білого золота з діамантами
+                </p>
+                <a
+                  href="https://ukrzoloto.ua/uk/product/kabluchka-ukrzoloto-z-bilogo-zolota-z-diamantom-uz10080883/"
+                  target="_blank"
+                  class="btn btn-success d-flex flex-column text-center"
+                  >Купити</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%822(2).png"
+                alt="Продукт 2"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">95 769₴</h5>
+                <p class="card-text text-justify">
+                  Браслет з білого золота з діамантами та сапфірами
+                </p>
+                <a
+                  href="https://ukrzoloto.ua/uk/product/braslet-ukrzoloto-z-bilogo-zolota-z-diamantom-uz62265/"
+                  target="_blank"
+                  class="btn btn-success d-flex flex-column text-center"
+                  >Купити</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%823.png"
+                class="card-img-top"
+                alt="Product 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">13 467₴</h5>
+                <p class="card-text text-justify">
+                  Сережки-конго з білого золота з фіанітами
+                </p>
+                <a
+                  href="https://ukrzoloto.ua/uk/product/serezhki-ukrzoloto-z-bilogo-zolota-z-fianitom-uz35481/"
+                  target="_blank"
+                  class="btn btn-success d-flex flex-column text-center"
+                  >Купити</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img
+                src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%824.png"
+                class="card-img-top"
+                alt="Product 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">21 398₴</h5>
+                <p class="card-text text-justify">
+                  Багатошаровий ланцюжок з білого золота
+                </p>
+                <a
+                  href="https://ukrzoloto.ua/uk/product/lantsyug-ukrzoloto-z-bilogo-zolota-uz21495/"
+                  target="_blank"
+                  class="btn btn-success d-flex flex-column text-center"
+                  >Купити</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carousel" class="w-100 p-0 m-0">
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%B3%D0%B0%D0%BB1.png"
+              class="d-block w-100"
+              alt="Слайд 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%B3%D0%B0%D0%BB2.png"
+              class="d-block w-100"
+              alt="Слайд 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://raw.githubusercontent.com/wqbier/frontend/main/img/%D0%B3%D0%B0%D0%BB3.png"
+              class="d-block w-100"
+              alt="Слайд 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="form" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Зв'язатися з нами</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ім’я</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Введіть ім’я"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Електронна пошта</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Повідомлення</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Ваше повідомлення"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Надіслати</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="bg-dark text-white text-center py-3">
+      <div class="container text-center">
+        <img
+          src="https://raw.githubusercontent.com/wqbier/frontend/refs/heads/main/img/logo.svg"
+          alt="Логотип"
+          height="60"
+          class="mb-3"
+        />
+        <h5 class="mb-1">0 800 75 92 29</h5>
+        <p class="mb-0">Безкоштовно по Україні з усіх телефонів</p>
+        <p class="mb-0">Пн-Пт 09:00 - 20:00</p>
+        <p>Сб-Нд 10:00 - 19:00</p>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <hr />
+      <p class="mb-0">&copy; УКРЗОЛОТО — 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
