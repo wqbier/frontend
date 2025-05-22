@@ -27,7 +27,6 @@ h1 {
   border: 2px solid #ccc;
   border-radius: 999px;
   outline: none;
-  transition: border-color 0.3s ease;
 }
 
 #taskInput:focus {
